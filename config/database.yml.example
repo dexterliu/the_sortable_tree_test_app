@@ -1,0 +1,29 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: the_sortable_tree_test_dev
+  pool: 5
+  username: root
+  password: qwerty
+  socket: /var/run/mysqld/mysqld.sock
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: the_sortable_tree_test_prod
+  pool: 5
+  username: root
+  password: qwerty
+  socket: /var/run/mysqld/mysqld.sock
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: the_sortable_tree_test_test
+  pool: 5
+  username: root
+  password: qwerty
+  socket: /var/run/mysqld/mysqld.sock
