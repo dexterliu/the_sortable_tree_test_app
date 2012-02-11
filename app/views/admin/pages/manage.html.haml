@@ -1,0 +1,10 @@
+%h1 Admin::Pages#manage
+
+- content_for :css do
+  = stylesheet_link_tag 'the_sortable_tree', :media => :screen
+- content_for :js do
+  = javascript_include_tag 'jquery.ui.nestedSortable'
+
+%p= link_to raw('&larr; back'), '/'
+
+= sortable_tree @pages, :new_url => new_admin_page_path, :max_levels => 4, :namespace => :admin
