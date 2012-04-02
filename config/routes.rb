@@ -12,6 +12,7 @@ TheSortableTreeTest::Application.routes.draw do
     resources :pages do
       collection do
         get :manage
+        get :first_root_manage
         post :rebuild
       end
     end

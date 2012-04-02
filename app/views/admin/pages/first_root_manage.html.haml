@@ -7,4 +7,11 @@
 
 %p= link_to raw('&larr; back'), '/'
 
-= sortable_tree @pages, :new_url => new_admin_page_path, :max_levels => 4, :namespace => :admin, :path => 'admin/pages/the_sortable_tree'
+= sortable_tree @pages, :new_url => new_admin_page_path, :max_levels => 4, :namespace => :admin
+
+
+%h2 Root:
+%div= @root.inspect
+
+%h2 Root's children:
+%div= @pages.inspect

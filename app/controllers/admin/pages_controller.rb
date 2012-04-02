@@ -8,4 +8,9 @@ class Admin::PagesController < ApplicationController
   def manage
     @pages = Page.nested_set.all
   end
+
+  def first_root_manage
+    @root = Page.root
+    @pages = @root.children
+  end
 end
