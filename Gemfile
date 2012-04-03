@@ -12,6 +12,8 @@ gem 'jquery-rails'
 gem 'awesome_nested_set'
 gem 'the_sortable_tree' #, :path => '~/rails/my_gems/the_sortable_tree'
 
+gem 'unicorn'
+
 group :assets do
   gem 'sass-rails', "  ~> 3.1.0"
   gem 'coffee-rails', "~> 3.1.0"
