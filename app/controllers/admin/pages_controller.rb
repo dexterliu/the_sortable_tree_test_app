@@ -10,7 +10,7 @@ class Admin::PagesController < ApplicationController
   end
 
   def first_root_manage
-    @root = Page.root
-    @pages = @root.children
+    @root  = Page.root
+    @pages = @root.descendants.nested_set.all
   end
 end
