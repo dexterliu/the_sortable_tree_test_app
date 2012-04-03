@@ -1,6 +1,6 @@
 == TheSortableTree Test Application
 
-== Ruby 1.8.7 + Rils 3.1.0 + TheSortableTree
+== Ruby 1.8.7 + Rails 3.1.0 + TheSortableTree
 
 1. git clone
 2. bundle
